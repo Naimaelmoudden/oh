@@ -1,0 +1,53 @@
+.restaurants {
+    background-color: $section-backColor;
+    padding-bottom: 50px;
+    &__list {
+        @media (min-width: 640px) {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-column-gap: 10px
+        }
+    }
+    &__list__block {
+        position: relative;
+    }
+    &__anchor {
+        border-radius: 15px;
+        margin: 20px 0;
+        width: 100%;
+        box-shadow: $block-shadow $shadow;
+        background-color: white;
+        display: block;
+        position: relative;
+        @include a-style(black);
+    }
+    &__pic {
+        background-size: cover;
+        min-width: 40%;
+        min-height: 170px;
+        background-position: center center;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+    &__text {
+        padding: 10px;
+        h4 {
+            margin: 5px;
+        }
+        p {
+            margin: 5px;
+            font-weight: map-get($font-weights, thin );
+        }
+    }
+    .new {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        background-color: $tertiary-color;
+        padding: 5px 10px;
+        border-radius: 2px;
+        font-size: map-get($font-sizes, small );
+        color: darken($tertiary-color, 45%);
+        font-weight: map-get($font-weights, bold );
+    }
+} 

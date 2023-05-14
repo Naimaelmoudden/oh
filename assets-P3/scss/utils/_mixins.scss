@@ -1,0 +1,23 @@
+@mixin a-style($color) {
+    text-decoration: none;
+    color: $color;
+}
+@mixin hearts {
+    float: right;
+    margin: 20px;
+    width: 1.3em;
+    height: 1.4em;
+    cursor: pointer;
+}
+@mixin btn {
+    border-radius: 20px;
+    padding: 13px;
+    display: block;
+    background: $gardient-btn;
+    border: none;
+    color: white;
+    font-size: map-get($font-sizes , small);
+    outline: none;
+    box-shadow: 1px 3px 6px 2px $shadow;
+    cursor: pointer; 
+}

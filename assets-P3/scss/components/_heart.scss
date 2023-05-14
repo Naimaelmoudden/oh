@@ -1,0 +1,83 @@
+/*for the heart in the menus*/ 
+label.bookmark-label {
+    position: relative;
+    right: 40px;
+    top: -10px;
+    @media (max-width: 350px) {
+        right: 10px;
+    }
+    .fa-heart {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 1.2em;
+        transform: scale(1.1,1.2);
+        cursor: pointer;
+    }
+    .fill-heart {
+        opacity: 0;
+        background: linear-gradient(180deg, $primary-color, $secondary-color);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        -webkit-text-fill-color: transparent; 
+        transition: all 600ms ease-in-out;
+    }
+    #bookmark-switch {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+    }
+    #bookmark-switch:checked ~ i {
+        &.empty-heart {
+            opacity: 0;
+        }
+        &.fill-heart {
+            opacity: 1;
+            transform: scale(1.1);
+        }
+    }
+}
+/*for the hearts in the homepage*/ 
+label.bookmark-home {
+    position: absolute;
+    right: 40px;
+    bottom: 50px;
+    @media (min-width: 640px) {
+        bottom: 75px;
+    }
+    .fa-heart {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 1.2em;
+        transform: scale(1.1,1.2);
+        cursor: pointer;
+    }
+    .fill-heart {
+        opacity: 0;
+        background: linear-gradient(180deg, $primary-color, $secondary-color);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+        transition: all 600ms ease-in-out;
+    }
+    #bookmark-switch1, #bookmark-switch2, #bookmark-switch3, #bookmark-switch4  {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        &:checked ~ i {
+            &.empty-heart {
+                opacity: 0;
+            }
+            &.fill-heart {
+                opacity: 1;
+                transform: scale(1.1);
+            }
+        }
+    }
+    
+}

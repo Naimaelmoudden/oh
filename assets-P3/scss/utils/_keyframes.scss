@@ -1,0 +1,88 @@
+@keyframes homepage-load {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  95% {
+    opacity: 0;
+  }
+  98% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1; 
+  }
+}
+/*fot the loader container*/
+@keyframes background-loader {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0; 
+  }
+}
+/*for the leading spinner*/
+@keyframes spinner {
+    0% {
+      transform: rotate(0deg);
+      opacity:1;
+    }
+    25% {
+      opacity: 0.7;
+    }
+    75% {
+      opacity: 0.3;
+    }
+    100% {
+      transform: rotate(360deg);
+      opacity: 1;
+    }
+} 
+/*for the animation of the menus*/
+@keyframes fadein {
+  0% {
+    transform: translateY(-90%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}  
+/*for the animation to save each plate on the menu*/ 
+@keyframes save-plate {
+  0% {
+    transform: translateX(6px);
+    opacity: 0;
+    width: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+    width: 70px;
+  }
+}
+/*for the icon in the save plate animation*/ 
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

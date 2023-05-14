@@ -1,0 +1,40 @@
+.homepage {
+    z-index: 6;
+    animation: homepage-load 2s forwards;
+}
+.loader-container {
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    animation: background-loader 2s forwards;
+}
+
+/*lading spinner*/ 
+.loader {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 300px auto;
+    border-radius: 50%;
+}
+  
+.loader:before {
+   content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    background: white;
+    border-radius: 50%;
+}
+.spin {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 50%;
+    background: linear-gradient( $primary-color, $secondary-color, $tertiary-color);
+    animation: spinner $spinner-dur linear infinite;
+}

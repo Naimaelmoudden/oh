@@ -1,0 +1,23 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": " projet 3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch style/style.scss style/style.css",
+    "build": "postcss postcss style/style.css -u autoprefixer -o ./build/style.mod.css"
+  },
+  "author": "Naima El Moudden",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+ https://github.com/Naimaelmoudden"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.5",
+    "postcss": "^8.4.12",
+    "postcss-cli": "^9.1.0",
+    "sass": "^1.49.11"
+  }
+}
